@@ -1,0 +1,172 @@
+/**Google Fonts**/
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/**variables **/
+:root { 
+
+    /**colors!**/
+    --primary-color: hsl(18, 96%, 44%);
+    --secondary-color: hsl(41, 100%, 50%);
+    --dark-color: hsl(203, 84%, 10%);
+    --light-color: hsl(201, 32%, 84%);
+    --primary-hue: 18;
+    --secondary-hue: 41
+    --light-hue: 201;
+    --dark-hue: 203;
+
+    /*fonts and stuff*/
+    /*.5rem = 8px | 1rem = 16px*/
+    --body-font: "Karla", sans-serif;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*font weight*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    
+}
+
+/* no margins by default */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+/*text for phones*/
+@media screen and (max-width: 1152px) {
+    :root {
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+    }
+
+}
+
+body{
+    font-family: var(--body-font);
+    color: white;
+    background-color: var(--dark-color);
+}
+
+/*header stuff*/
+header {
+    display: block;
+    background-color: hsl(var(--dark-hue), 100%, 2%);
+    width: 100%;
+    overflow: hidden;
+}
+ul#nav {
+    background-color: hsl(var(--dark-hue), 100%, 2%);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+}
+
+li.nav-item {
+    display: flex;
+    transition-duration: 0.4s;
+    
+}
+
+li.nav-item:hover {
+    background-color: var(--primary-color);
+}
+
+li.nav-item a {
+    display: block;
+    padding: 8px;
+    margin: 8px 0 8px 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+#name {
+    margin: 8px;
+    display: inline;
+    float: left;
+    padding: 8px ;
+}
+
+#navbar {
+    float: right;
+}
+
+#toggle {
+    margin: auto;
+    padding: 16px;
+    float: right;
+    height: inherit;
+}
+
+
+
+/* header for mobile */
+@media screen and (max-width: 500px) {
+    
+    ul#nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+ul#nav.hidden {
+    display: none;
+}
+
+/*          body                */
+
+/* star animation */
+@keyframes pan {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-1000px, 0);
+    }
+    
+}
+
+#edge-gradient {
+    position: absolute;
+    background-image: radial-gradient(rgba(0,0,0,0) 60%, rgba(4, 30, 47, 1) 70%);
+    height: 100%;
+    width: 100%;
+}
+#star-container{
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+#stars{
+    height: 100%;
+    position: absolute;
+    background-image: url("assets/star.png");
+    background-size: 10%;
+    min-width: auto;
+    animation: pan 180s linear infinite;
+    width: 200%;
+    opacity: 25%;
+}
