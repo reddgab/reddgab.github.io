@@ -17,15 +17,14 @@
     /*fonts and stuff*/
     /*.5rem = 8px | 1rem = 16px*/
     --body-font: "Karla", sans-serif;
-    --biggest-font-size: 2rem;
-    --bigger-font-size: 1.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
     /*font weight*/
     --font-regular: 400;
     --font-medium: 500;
@@ -44,21 +43,6 @@
 /* colors */
 .active {
     background-color: var(--primary-color);
-}
-
-/*text for phones*/
-@media screen and (max-width: 1152px) {
-    :root {
-    --biggest-font-size: 4rem;
-    --bigger-font-size: 2rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-    }
-
 }
 
 body{
@@ -182,16 +166,68 @@ ul#nav.hidden {
     opacity: 25%;
 }
 
+
+#intro{
+    display: flex;
+}
+
 #portrait{
-    float: right;
     border-radius: 1000px;
     overflow: hidden;
     height: 50vh;
     width: 50vh;
+    margin: 5%;
+    border: 2vh solid var(--secondary-color);
+    box-shadow: 2vh 2vh black;
 }
 
 #portrait img {
     height: 100%;
-    margin: auto;
 }
 
+
+#hello {
+    font-weight: var(--font-semi-bold);
+    color: var(--primary-color);
+    text-shadow: 2px 2px black;
+    font-size: var(--biggest-font-size);
+}
+
+#subtext {
+    margin: 2% 0 2% 0;
+    font-size: var(--bigger-font-size);
+}
+
+#subbertext{
+    
+    font-size: var(--big-font-size);
+}
+
+#greeting {
+
+    padding: 2%;
+    margin: auto;
+    width: 40%;
+}
+
+/* intro for phones */
+
+@media screen and (max-width: 700px) {
+    #intro {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #portrait {
+        height: 40vh;
+        width: 40vh;
+        order: 1;
+        margin: auto;
+        
+    }
+
+    #greeting {
+        order: 2;
+        width: 80%;
+    }
+}
