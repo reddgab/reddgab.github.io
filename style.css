@@ -41,6 +41,11 @@
     margin: 0;
   }
 
+/* colors */
+.active {
+    background-color: var(--primary-color);
+}
+
 /*text for phones*/
 @media screen and (max-width: 1152px) {
     :root {
@@ -64,6 +69,8 @@ body{
 
 /*header stuff*/
 header {
+    top: 0;
+    position:fixed;
     display: block;
     background-color: hsl(var(--dark-hue), 100%, 2%);
     width: 100%;
@@ -100,7 +107,7 @@ span {
     color: var(--primary-color);
 }
 
-#name {
+#name { 
     margin: 8px;
     display: inline;
     float: left;
@@ -136,6 +143,10 @@ ul#nav.hidden {
 
 /*          body                */
 
+#body {
+    margin-top: 50px;
+}
+
 /* star animation */
 @keyframes pan {
     0% {
@@ -149,7 +160,7 @@ ul#nav.hidden {
 
 #edge-gradient {
     position: absolute;
-    background-image: radial-gradient(rgba(0,0,0,0) 60%, rgba(4, 30, 47, 1) 70%);
+    background-image: linear-gradient(to right, rgba(4, 30, 47, 1) 0%, rgba(0,0,0,0) 50%, rgba(4, 30, 47, 1) 100%);
     height: 100%;
     width: 100%;
 }
@@ -170,3 +181,17 @@ ul#nav.hidden {
     width: 200%;
     opacity: 25%;
 }
+
+#portrait{
+    float: right;
+    border-radius: 1000px;
+    overflow: hidden;
+    height: 50vh;
+    width: 50vh;
+}
+
+#portrait img {
+    height: 100%;
+    margin: auto;
+}
+
