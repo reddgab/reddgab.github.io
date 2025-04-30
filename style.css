@@ -51,7 +51,7 @@ body{
     background-color: var(--dark-color);
 }
 
-/*header stuff*/
+/*=====================header stuff=============================*/
 header {
     top: 0;
     position:fixed;
@@ -61,7 +61,6 @@ header {
     overflow: hidden;
 }
 ul#nav {
-    background-color: hsl(var(--dark-hue), 100%, 2%);
     display: flex;
     justify-content: right;
     align-items: center;
@@ -125,7 +124,7 @@ ul#nav.hidden {
     display: none;
 }
 
-/*          body                */
+/*==========================body======================*/
 
 #body {
     margin-top: 50px;
@@ -167,17 +166,18 @@ ul#nav.hidden {
 }
 
 
-#intro{
+#home{
     display: flex;
 }
 
 #portrait{
     border-radius: 1000px;
     overflow: hidden;
-    height: 50vh;
-    width: 50vh;
+    height: 30vw;
+    width: 30vw;
     margin: 5%;
-    border: 2vh solid var(--secondary-color);
+    border: 1rem solid;
+    border-color: var(--primary-color) var(--primary-color) var(--secondary-color) var(--secondary-color);
     box-shadow: 2vh 2vh black;
 }
 
@@ -210,17 +210,17 @@ ul#nav.hidden {
     width: 40%;
 }
 
-/* intro for phones */
+/* home for phones */
 
 @media screen and (max-width: 700px) {
-    #intro {
+    #home {
         flex-direction: column;
         justify-content: center;
     }
 
     #portrait {
-        height: 40vh;
-        width: 40vh;
+        height: 40vw;
+        width: 40vw;
         order: 1;
         margin: auto;
         
@@ -230,4 +230,27 @@ ul#nav.hidden {
         order: 2;
         width: 80%;
     }
+}
+
+/* ===================about=================== */
+
+#about {
+    background-color: hsl(var(--dark-hue), 87%, 6%);
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.box {
+    border-color: var(--primary-color);
+    border-width: 4rem;
+    background-color: var(--dark-color);
+    border-radius: 20%;
+    padding: 35px;  
+    margin: 4%;
+}
+
+#bio {
+    text-align: center;
+    font-size: var(--h3-font-size);
 }
