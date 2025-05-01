@@ -59,6 +59,7 @@ header {
     background-color: hsl(var(--dark-hue), 100%, 2%);
     width: 100%;
     overflow: hidden;
+    z-index: 2;
 }
 ul#nav {
     display: flex;
@@ -189,7 +190,7 @@ ul#nav.hidden {
 #hello {
     font-weight: var(--font-semi-bold);
     color: var(--primary-color);
-    text-shadow: 2px 2px black;
+    text-shadow: 5px 5px black;
     font-size: var(--biggest-font-size);
 }
 
@@ -238,7 +239,9 @@ ul#nav.hidden {
     background-color: hsl(var(--dark-hue), 87%, 6%);
     display: flex;
     width: 100%;
-    height: 70vh;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--h3-font-size);
 }
 
 .box {
@@ -247,10 +250,23 @@ ul#nav.hidden {
     background-color: var(--dark-color);
     border-radius: 20%;
     padding: 35px;  
-    margin: 4%;
+    margin: 2%;
+    width: 100%;
+    position: relative;
+}
+
+.title {
+    color: var(--primary-color);
+    text-shadow: 5px 5px black;
 }
 
 #bio {
-    text-align: center;
-    font-size: var(--h3-font-size);
+    padding: auto;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
