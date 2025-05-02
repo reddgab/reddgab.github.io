@@ -36,11 +36,8 @@ const helloList = ["Hello!", "!لسلام عليكم", "Hallo!", "Bonjour!", "Gu
 
 function multilanguage () {
     
-    let i = 0;
+    var i = 0;
     function changeHello () {
-        if (i >= helloList.length) {
-            i = 0;
-        }
         hello.innerHTML = "  ";
         hello.style.transitionDuration = "0s"; 
         hello.style.transform = "translateX(-10%)";
@@ -48,11 +45,15 @@ function multilanguage () {
     
         setTimeout(() => { //because if i didn't have this it will run at the same time??
             hello.innerHTML = helloList[i]; 
-            console.log(hello.innerHTML);
+            console.log(hello.innerHTML + i);
             hello.style.transitionDuration = "1s";
             hello.style.transform = "translateX(0)"; 
         }, 1);
-    i++;
+        if (i + 1 >= helloList.length) {
+            i = 0;
+        } else {
+            i++
+        }
     }
     setInterval(changeHello, 3000);
     

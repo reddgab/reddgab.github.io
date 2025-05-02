@@ -243,11 +243,9 @@ ul#nav.hidden {
     text-align: center;
     font-size: var(--h3-font-size);
 }
-
+/* my reusable divs hehe */
 .box {
     border-color: var(--primary-color);
-    border-width: 4rem;
-    background-color: var(--dark-color);
     border-radius: 20%;
     padding: 35px;  
     margin: 2%;
@@ -255,18 +253,92 @@ ul#nav.hidden {
     position: relative;
 }
 
+.flexlist {
+    display: flex;
+    gap: 5px;
+    
+}
 .title {
     color: var(--primary-color);
     text-shadow: 5px 5px black;
 }
+.pills {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+    padding: 5px;
+
+}
 
 #bio {
     padding: auto;
+    
+    
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#code-list{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 7px 0 0 7px;
+    height: 100%;
+}
+
+
+#skill-list{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 7px 0 0 7px;
+    height: 100%;
+}
+
+
+/* individual colors of the codes and skills*/
+
+#java {
+    border-color: red;
+    color: red;
+}
+
+#javascript {
+    border-color: rgb(255, 213, 3);
+    color: rgb(255, 213, 3);
+}
+
+#html {
+    border-color: rgb(255, 98, 0);
+    color: rgb(255, 98, 0);
+}
+
+#c-plusplus {
+    border-color: rgb(0, 85, 255);
+    color: rgb(0, 85, 255);
+}
+
+#python {
+    border-color: yellow;
+    color: yellow;
+}
+
+#css {
+    border-color: cyan;
+    color: cyan;
+}
+
+#programming {
+    border-color: rgb(46, 255, 130);
+    color: rgb(46, 255, 130);
+}
+#stenography {
+    border-color: rgb(225, 0, 255);
+    color: rgb(255, 0, 255);
+}
+
+#modelling {
+    border-color: rgb(193, 247, 0);
+    color: rgb(193, 247, 0);
+}
+
+#animation {
+    border-color: rgb(255, 107, 53);
+    color: rgb(255, 107, 53);
 }
