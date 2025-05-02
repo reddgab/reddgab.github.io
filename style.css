@@ -35,14 +35,76 @@
 
 /* no margins by default */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* and also make box sizes like. the way it's supposed to be*/
     padding: 0;
     margin: 0;
   }
 
+@media screen and (max-width:850px){
+    * {
+        font-size: var(--normal-font-size);
+    }
+}
+h1, h2 {
+    color: var(--primary-color);
+    text-shadow: 5px 5px black;
+}
+
 /* colors */
 .active {
     background-color: var(--primary-color);
+}
+
+/* my reusable stuff hehe */
+.box {
+    border-color: var(--primary-color);
+    border-radius: 20%;
+    padding: 20px;  
+    margin: 2%;
+    width: 100%;
+    position: relative;
+}
+
+.flexlist {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    
+}
+
+.pills {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.full-width{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: hsl(var(--dark-hue), 87%, 6%);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--h3-font-size);
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+.imagebox {
+    display: flex; 
+    justify-content: center; 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagebox img {
+    flex-shrink: 0;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 body{
@@ -109,16 +171,23 @@ span {
     height: inherit;
 }
 
+#filler {
+    display: none;
+}
 
 
 /* header for mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     
     ul#nav {
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
+    #filler {
+        display: block;
+    }
 }
 
 ul#nav.hidden {
@@ -166,7 +235,7 @@ ul#nav.hidden {
     opacity: 25%;
 }
 
-
+/* actual home stuff */
 #home{
     display: flex;
 }
@@ -213,15 +282,15 @@ ul#nav.hidden {
 
 /* home for phones */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     #home {
         flex-direction: column;
         justify-content: center;
     }
 
     #portrait {
-        height: 40vw;
-        width: 40vw;
+        height: 60vw;
+        width: 60vw;
         order: 1;
         margin: auto;
         
@@ -235,41 +304,6 @@ ul#nav.hidden {
 
 /* ===================about=================== */
 
-#about {
-    background-color: hsl(var(--dark-hue), 87%, 6%);
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    font-size: var(--h3-font-size);
-}
-/* my reusable divs hehe */
-.box {
-    border-color: var(--primary-color);
-    border-radius: 20%;
-    padding: 35px;  
-    margin: 2%;
-    width: 100%;
-    position: relative;
-}
-
-.flexlist {
-    display: flex;
-    gap: 5px;
-    
-}
-.title {
-    color: var(--primary-color);
-    text-shadow: 5px 5px black;
-}
-.pills {
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    border-radius: 3px;
-    padding: 5px;
-
-}
-
 #bio {
     padding: auto;
     
@@ -278,7 +312,6 @@ ul#nav.hidden {
 
 #code-list{
     justify-content: center;
-    flex-wrap: wrap;
     margin: 7px 0 0 7px;
     height: 100%;
 }
@@ -286,7 +319,6 @@ ul#nav.hidden {
 
 #skill-list{
     justify-content: center;
-    flex-wrap: wrap;
     margin: 7px 0 0 7px;
     height: 100%;
 }
@@ -341,4 +373,52 @@ ul#nav.hidden {
 #animation {
     border-color: rgb(255, 107, 53);
     color: rgb(255, 107, 53);
+}
+
+/* about for phones */
+@media screen and (max-width: 850px) {
+    #about {
+        flex-direction: column;
+    }
+    
+}
+
+/*========================contributions======================*/
+#contributions {
+    display:block;
+}
+
+div#contributions .flexlist {
+    margin: 5%;
+    justify-content: center;
+}
+
+.flexlist .frame{
+    width: 312px;
+}
+.frame div.imagebox {
+    margin: 20px;
+    aspect-ratio: 1/1;
+    height: 17rem;
+}
+
+@media screen and (max-width: 850px) {
+
+    #contributions .flexlist {
+        font-size: var(--small-font-size);
+    }
+
+    #contributions .flexlist h2 {
+        font-size: var(--h3-font-size);
+    }
+
+    .flexlist .frame{
+        width: 184px;
+    }
+    .frame div.imagebox {
+        margin: 20px;
+        aspect-ratio: 1/1;
+        height: 9rem;
+    }
+    
 }

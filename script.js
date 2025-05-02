@@ -44,7 +44,7 @@ function multilanguage () {
 
     
         setTimeout(() => { //because if i didn't have this it will run at the same time??
-            hello.innerHTML = helloList[i]; 
+            hello.innerHTML = helloList[i];     
             console.log(hello.innerHTML + i);
             hello.style.transitionDuration = "1s";
             hello.style.transform = "translateX(0)"; 
