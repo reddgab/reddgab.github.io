@@ -41,9 +41,6 @@
     scroll-behavior: smooth;
   }
 
-html {
-    
-}
 
 @media screen and (max-width:850px){
     * {
@@ -84,6 +81,7 @@ h1, h2 {
     padding: 5px;
 
 }
+
 
 .full-width{
     padding-top: 5%;
@@ -318,6 +316,10 @@ ul#nav.hidden {
     
 }
 
+#skills {
+    margin: 10px;
+}
+
 #code-list{
     justify-content: center;
     margin: 7px 0 0 7px;
@@ -387,6 +389,7 @@ ul#nav.hidden {
 @media screen and (max-width: 850px) {
     #about {
         flex-direction: column;
+        margin: 0;
     }
     
 }
