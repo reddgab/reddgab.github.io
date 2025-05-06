@@ -41,7 +41,6 @@
     scroll-behavior: smooth;
   }
 
-
 @media screen and (max-width:850px){
     * {
         font-size: var(--normal-font-size);
@@ -94,6 +93,12 @@ h1, h2 {
     font-size: var(--h3-font-size);
     margin-top: 8vh;
     margin-bottom: 8vh;
+}
+
+@media screen and (max-width: 850px) {
+    .full-width {
+        display: block;
+    }
 }
 
 
@@ -244,13 +249,14 @@ ul#nav.hidden {
 /* actual home stuff */
 #home{
     display: flex;
+    
 }
 
 #portrait{
     border-radius: 1000px;
     overflow: hidden;
-    height: 30vw;
-    width: 30vw;
+    height: 30%;
+    aspect-ratio: 1/1;
     margin: 5%;
     border: 1rem solid;
     border-color: var(--primary-color) var(--primary-color) var(--secondary-color) var(--secondary-color);
@@ -282,7 +288,7 @@ ul#nav.hidden {
 #greeting {
 
     padding: 2%;
-    margin: auto;
+    margin: 5% auto 5% auto;
     width: 40%;
 }
 
@@ -295,8 +301,8 @@ ul#nav.hidden {
     }
 
     #portrait {
-        height: 60vw;
-        width: 60vw;
+        aspect-ratio: 1/1;
+        width: 60%;
         order: 1;
         margin: auto;
         
@@ -387,10 +393,7 @@ ul#nav.hidden {
 
 /* about for phones */
 @media screen and (max-width: 850px) {
-    #about {
-        flex-direction: column;
-        margin: 0;
-    }
+
     
 }
 
