@@ -51,6 +51,11 @@ h1, h2 {
     text-shadow: 5px 5px black;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* colors */
 .active {
     background-color: var(--primary-color);
@@ -59,9 +64,9 @@ h1, h2 {
 /* my reusable stuff hehe */
 .box {
     border-color: var(--primary-color);
-    border-radius: 20%;
+    border-radius: 12px;
     padding: 20px;  
-    /* margin: 2%; */
+    margin: 2% 0 2% 0;
     width: 100%;
     position: relative;
 }
@@ -96,8 +101,15 @@ h1, h2 {
 }
 
 @media screen and (max-width: 850px) {
+    h1 {
+        font-size: var(--h1-font-size);
+    }
     .full-width {
-        display: block;
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 2% 0 2% 0;
     }
 }
 
@@ -249,6 +261,7 @@ ul#nav.hidden {
 /* actual home stuff */
 #home{
     display: flex;
+    align-items: center;
     
 }
 
@@ -286,7 +299,6 @@ ul#nav.hidden {
 }
 
 #greeting {
-
     padding: 2%;
     margin: 5% auto 5% auto;
     width: 40%;
@@ -315,16 +327,6 @@ ul#nav.hidden {
 }
 
 /* ===================about=================== */
-
-#bio {
-    padding: auto;
-    margin: 10px;
-    
-}
-
-#skills {
-    margin: 10px;
-}
 
 #code-list{
     justify-content: center;
@@ -436,3 +438,25 @@ div#contributions .flexlist {
     }
     
 }
+/*=======================CONTACT=======================*/
+
+#contact {
+    display: block;
+}
+
+#contact div {
+    display: flex;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(var(--dark-hue), 58%, 16%);
+    margin: 1%;
+}
+
+#inputs {
+    display: flex;
+    justify-content: space-between;
+}
+

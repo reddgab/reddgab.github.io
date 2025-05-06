@@ -25,7 +25,7 @@ function toggleNav () {
 
 function autoHide() {
     if (screen.availWidth < 500) {
-        navBar.classList.add("hidden");
+        toggleNav();
     }
 }
 
