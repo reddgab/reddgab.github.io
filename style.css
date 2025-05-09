@@ -39,6 +39,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: var(--body-font);
   }
 
 @media screen and (max-width:850px){
@@ -71,6 +72,14 @@ a {
     position: relative;
 }
 
+.box-header {
+    display: block;
+    margin: 1%;
+}
+
+.box-header > h2 {
+    margin: 3.2%;
+}
 .flexlist {
     flex-wrap: wrap;
     display: flex;
@@ -130,7 +139,6 @@ a {
 
 body{
     width: 100%;
-    font-family: var(--body-font);
     color: white;
     background-color: var(--dark-color);
 }
@@ -394,10 +402,7 @@ ul#nav.hidden {
 }
 
 /* about for phones */
-@media screen and (max-width: 850px) {
 
-    
-}
 
 /*========================contributions=======================*/
 #contributions {
@@ -440,13 +445,46 @@ div#contributions .flexlist {
 }
 /*=======================CONTACT=======================*/
 
+input, textarea {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3%;
+    border-color: var(--light-color);
+    border-width: 3px;
+    border-radius: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input :focus {
+    border-color: var(--primary-color);
+}
+
 #contact {
     display: block;
 }
 
-#contact div {
+#contact > div {
     display: flex;
+    gap: 1%;
+    margin: 1%;
 }
+
+#socials {
+    flex-direction: column;
+}
+
+.contacts {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding: 1%;
+    margin: 1%;
+}
+
+
 
 #email {
     display: flex;
@@ -456,7 +494,51 @@ div#contributions .flexlist {
 }
 
 #inputs {
+    gap: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
+}
+#contact div #inputs {
+    height: 47px;
     display: flex;
     justify-content: space-between;
+}
+
+#inputs input {
+    width: 100%;
+}
+
+#message {
+    height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .box-header h2 {
+        font-size: var(--h2-font-size);
+        margin-top: 0;
+    }
+    
+    
+    #contact > div {
+        flex-direction: column;
+    }
+    
+    #email {
+        order: 1;
+        margin: 0;
+        margin-top: 2%;
+    }
+
+    #socials {
+        order: 2;
+    }
+    .full-width {
+        flex-direction: column;
+    }
+    
+    .box {
+        margin: 2% 0 2% 0;
+    }
 }
 
