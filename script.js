@@ -24,7 +24,7 @@ function toggleNav () {
 // hide navbar when on mobile
 
 function autoHide() {
-    if (screen.availWidth < 500) {
+    if (screen.availWidth > 500) {
         toggleNav();
     }
 }

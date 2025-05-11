@@ -494,10 +494,22 @@ input :focus {
 }
 
 #inputs {
-    gap: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
     
+}
+.form-row {
+    width: 100%;
+    display: flex;
+    
+    gap: 2%;
+}
+
+textarea {
+    width: 100%;
+}
+.col {
+    width: 100%;
 }
 #contact div #inputs {
     height: 47px;
@@ -511,6 +523,22 @@ input :focus {
 
 #message {
     height: 100%;
+}
+
+#sendbtn {
+    margin: 2%;
+    padding: 5px;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 34px;
+    border-color: var(--primary-color);
+    height: 24%;
+    transition-duration: 0.4s;
+}
+
+#sendbtn:hover {
+    background-color: var(--dark-color)
 }
 
 @media screen and (max-width: 850px) {

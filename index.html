@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Redd Gabrinao</title>
 </head>
 <body>
@@ -90,55 +92,69 @@
             <h1>Contributions</h1> <br>
             Here's some stuff I worked on!
             <div class="flexlist">
-                <div class="frame">
-                    <div class="imagebox">
-                        <img src="assets/dreamsettler.png" alt="dreamsettler logo">
+                <a target="_blank" href="https://store.steampowered.com/app/1931040/Dreamsettler/">
+                    <div class="frame">
+                        <div class="imagebox">
+                            <img src="assets/dreamsettler.png" alt="dreamsettler logo">
+                        </div>
+                        <h2>Dreamsettler</h2>
+                        Additional Sound Design
                     </div>
-                    <h2>Dreamsettler</h2>
-                    Additional Sound Design
-                </div>
-                <div class="frame">
+                </a>
+                <a target="_blank" href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc">
+                    <div class="frame">
                     <div class="imagebox">
                         <img src="assets/mc.jpg" alt="Minecraft">
                     </div>
                     <h2>Minecraft</h2>
                     Filipino Translation
                 </div>
-                <div class="frame">
+                </a>
+                <a target="_blank" href="https://www.keybr.com/">
+                    <div class="frame">
                     <div class="imagebox">
                         <img src="assets/keybr.png" alt="Screenshot of keybr.com">
                     </div>
                     <h2>Keybr</h2>
-                    Filipino Translation
+                    Filipino Translation (In progress)
                 </div>
-                <div class="frame">
+                </a>
+                <a target="_blank" href="https://www.ifixit.com/">
+                    <div class="frame">
                     <div class="imagebox">
                         <img src="assets/ifixit.png" alt="iFixit logo">
                     </div>
                     <h2>iFixit</h2>
-                    Filipino Translation
+                    Filipino Translation (In progress)
                 </div>
-                <div class="frame">
+                </a>
+                <a target="_blank" href="https://apps.apple.com/us/app/be-my-eyes/id905177575">
+                    <div class="frame">
                     <div class="imagebox">
                         <img src="assets/be my eyes.png" alt="Be My Eyes logo">
                     </div>
-                    <h2>Be My Eyes</h2>
+                    <h2>Be My Eyes iOS</h2>
                     Filipino Translation
                 </div>
-                <div class="frame">
+                </a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher/">
+                    <div class="frame">
                     <div class="imagebox">
                         <img src="assets/nova.jpg" alt="Nova Launcher logo">
                     </div>
                     <h2>Nova Launcher</h2>
                     Filipino Translation
                 </div>
-                <div class="frame">
+                </a>
+                <a target="_blank" href="https://github.com/dimdenGD/OldTwitter">
+                    <div class="frame">
                     <div class="imagebox">
                         <img src="assets/oldtwitter.png" alt="Old Twitter logo">
                     </div>
                     <h2>Old Twitter Layout Extension</h2>
                     Filipino Translation
                 </div>
+                </a>
             </div>
         </div> 
         <!------------------contact------------------>
@@ -170,14 +186,24 @@
                         <p>Can't wait? Talk to me directly here!</p>
                     </div>
                     <br>
-                    <form action="https:formsubmit.co/reddgabrinao@gmail.com" method="POST">
-                        <div id="inputs">
-                            <input type="text" id="name-input" name="name"  placeholder="Name" required>
-                            <input type="email" id="email-input" name="email" placeholder="E-mail" required>
-                        </div>
-                        <textarea type="text" id="message" name="message" placeholder="Message" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
+                    <div class="container">
+                        <form target="_blank" action="https://formsubmit.co/reddgabrinao@gmail.com" method="POST">
+                          <div class="form-group" id="inputs">
+                            <div class="form-row">
+                              <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                              </div>
+                              <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                          </div>
+                          <button type="submit" id="sendbtn">Send!</button>
+                        </form>
+                      </div>
                     
                 </div>
             </div>
