@@ -7,8 +7,11 @@
     <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <!-- animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Redd Gabrinao</title>
+    
 </head>
 <body>
     <!------------------------ headerrrr ----------------------->
@@ -38,20 +41,20 @@
         <!-- name and portrait -->
 
         <div id="home">
-            <div id="greeting">
+            <div id="greeting" data-aos="fade-up">
                 <div id="hello">Hello!</div>
                 <div id="subtext">I'm Redd Gabrinao.</div>
                 <div id="subbertext">I'm a 1st year student in STI Alabang who dabbles in website creation and is currently learning more programming languages. 
                 </div>
             </div>
-            <div id="portrait">
+            <div id="portrait" data-aos="fade-up">
                 <img src="assets/literally me.png">
             </div>
         </div>
 
         <!---------------------about----------------->
         <div id="about" class="full-width"> 
-            <div id="bio" class="box">
+            <div id="bio" class="box" data-aos="fade-right">
                 <h1>Bio</h1>
                 <div>
                     <br>
@@ -59,7 +62,7 @@
                 </div>
                 
             </div>
-            <div id="skills" class="box">
+            <div id="skills" class="box" data-aos="fade-left">
                 <h1>Skills</h1>
                 <div>
                     <br>
@@ -88,11 +91,11 @@
         
         <!------------------contributions------------------>
         
-        <div id="contributions" class="full-width"> 
+        <div id="contributions" class="full-width" data-aos="fade-up"> 
             <h1>Contributions</h1> <br>
             Here's some stuff I worked on!
-            <div class="flexlist">
-                <a target="_blank" href="https://store.steampowered.com/app/1931040/Dreamsettler/">
+            <div class="flexlist" id="contributiongrid">
+                <a target="_blank" class="contribution-item" href="https://store.steampowered.com/app/1931040/Dreamsettler/">
                     <div class="frame">
                         <div class="imagebox">
                             <img src="assets/dreamsettler.png" alt="dreamsettler logo">
@@ -101,7 +104,7 @@
                         Additional Sound Design
                     </div>
                 </a>
-                <a target="_blank" href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc">
+                <a target="_blank" class="contribution-item" href="https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc">
                     <div class="frame">
                     <div class="imagebox">
                         <img src="assets/mc.jpg" alt="Minecraft">
@@ -110,7 +113,7 @@
                     Filipino Translation
                 </div>
                 </a>
-                <a target="_blank" href="https://www.keybr.com/">
+                <a target="_blank" class="contribution-item" href="https://www.keybr.com/">
                     <div class="frame">
                     <div class="imagebox">
                         <img src="assets/keybr.png" alt="Screenshot of keybr.com">
@@ -119,7 +122,7 @@
                     Filipino Translation (In progress)
                 </div>
                 </a>
-                <a target="_blank" href="https://www.ifixit.com/">
+                <a target="_blank" class="contribution-item" href="https://www.ifixit.com/">
                     <div class="frame">
                     <div class="imagebox">
                         <img src="assets/ifixit.png" alt="iFixit logo">
@@ -128,7 +131,7 @@
                     Filipino Translation (In progress)
                 </div>
                 </a>
-                <a target="_blank" href="https://apps.apple.com/us/app/be-my-eyes/id905177575">
+                <a target="_blank" class="contribution-item" href="https://apps.apple.com/us/app/be-my-eyes/id905177575">
                     <div class="frame">
                     <div class="imagebox">
                         <img src="assets/be my eyes.png" alt="Be My Eyes logo">
@@ -137,7 +140,7 @@
                     Filipino Translation
                 </div>
                 </a>
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher/">
+                <a target="_blank" class="contribution-item" href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher/">
                     <div class="frame">
                     <div class="imagebox">
                         <img src="assets/nova.jpg" alt="Nova Launcher logo">
@@ -146,7 +149,7 @@
                     Filipino Translation
                 </div>
                 </a>
-                <a target="_blank" href="https://github.com/dimdenGD/OldTwitter">
+                <a target="_blank" class="contribution-item" href="https://github.com/dimdenGD/OldTwitter">
                     <div class="frame">
                     <div class="imagebox">
                         <img src="assets/oldtwitter.png" alt="Old Twitter logo">
@@ -158,29 +161,29 @@
             </div>
         </div> 
         <!------------------contact------------------>
-        <div class="full-width" id="contact">
+        <div class="full-width" id="contact" data-aos="fade-up">
             <h1>Contact</h1>
             <br>
             Wanna chat? Find me here!
             <div>
-                <div class="box" id="socials">
+                <div class="box" id="socials" data-aos="fade-right">
                     <div class="box-header">
                         <h2>Socials</h2>
                         <p>Social media links!</p>
                     </div>
                     <br>
                     <div class="contacts" id="facebook">
-                        <i class="ri-facebook-box-fill"></i><a href="https://www.facebook.com/reddbutonfb">Redd Gabrinao</a>
+                        <i class="ri-facebook-box-fill"></i><a target="_blank" href="https://www.facebook.com/reddbutonfb" >Redd Gabrinao</a>
                     </div>
                     <div class="contacts" id="github">
-                        <i class="ri-github-fill"></i><a href="https://github.com/reddgab">reddgab</a>
+                        <i class="ri-github-fill"></i><a target="_blank" href="https://github.com/reddgab">reddgab</a>
                     </div>
                     <div class="contacts" id="google">
-                        <i class="ri-google-fill"></i><a href="mailto:reddgabrinao@gmail.com">reddgabrinao@gmail.com</a>
+                        <i class="ri-google-fill"></i><a target="_blank" href="mailto:reddgabrinao@gmail.com">reddgabrinao@gmail.com</a>
                     </div>
 
                 </div>
-                <div class="box" id="email">
+                <div class="box" id="email" data-aos="fade-left">
                     <div class="box-header">
                         <h2>E-mail</h2>
                         <p>Can't wait? Talk to me directly here!</p>
@@ -190,18 +193,18 @@
                         <form target="_blank" action="https://formsubmit.co/reddgabrinao@gmail.com" method="POST">
                           <div class="form-group" id="inputs">
                             <div class="form-row">
-                              <div class="col">
+                              <div class="col" data-aos="fade-right" data-aos-anchor="#email" data-aos-delay="50">
                                 <input type="text" name="name" class="form-control" placeholder="Full Name" required>
                               </div>
-                              <div class="col">
+                              <div class="col" data-aos="fade-left" data-aos-anchor="#email" data-aos-delay="50">
                                 <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                               </div>
                             </div>
                           </div>
-                          <div class="form-group">
+                          <div class="form-group" data-aos="fade-up" data-aos-anchor="#email" data-aos-delay="100">
                             <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                           </div>
-                          <button type="submit" id="sendbtn">Send!</button>
+                          <button type="submit" id="sendbtn"fade-up>Send!</button>
                         </form>
                       </div>
                     
@@ -209,9 +212,20 @@
             </div>
             
         </div>
-        
+        <!----------------------footer---------------------->
+        <footer>
+            Copyright Redd Gabrinao. All rights reserved
+        </footer>
     </div>
     <!--script-->
     <script src="script.js"></script>
+   <!-- animation -->
+    <script>
+        if (screen.availWidth > 500) {
+            AOS.init({offset: 0});
+        } else {
+            AOS.init({offset: 600});
+        }
+    </script>
 </body> 
 </html>
