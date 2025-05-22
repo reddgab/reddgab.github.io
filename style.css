@@ -588,10 +588,18 @@ textarea {
     .box {
         margin: 2% 0 2% 0;
     }
+
+    
 }
 
 footer {
     padding: 1%;
     text-align: center;
     background-color: black;
+}
+
+@media screen and (max-width:850px){
+    footer {
+        font-size: var(--smaller-font-size);
+}
 }
