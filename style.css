@@ -278,6 +278,7 @@ ul#nav.hidden {
 }
 
 #portrait{
+    width: 40%;
     border-radius: 1000px;
     overflow: hidden;
     height: 30%;
