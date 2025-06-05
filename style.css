@@ -220,13 +220,17 @@ span {
     padding: 0% 1%;
 }
 
-#toggle, #toggle.active {
+#toggle {
     display: none;
 }
 
 
 /* header for mobile */
 @media screen and (max-width: 850px) {
+
+    #toggle {
+        display: block;
+    }
     
     ul#nav {
         width: 100%;
@@ -341,15 +345,18 @@ ul#nav.hidden {
 
     #portrait {
         aspect-ratio: 1/1;
-        width: 60%;
+        min-width: 80%;
         order: 1;
-        margin: auto;
+        margin: 14% 0;
+        /* margin-top: 50px; */
         
     }
 
     #greeting {
         order: 2;
-        width: 80%;
+        /* height: 50%;  */
+        width: 100%;
+        padding: 4%;
     }
 }
 
