@@ -51,7 +51,6 @@ const navBar = document.getElementById("nav");
 
 window.onload=function(){
     toggleButton.addEventListener("click", toggleNav);
-    toggleNav();
     multilanguage();
 
 }
