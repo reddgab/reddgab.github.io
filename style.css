@@ -625,13 +625,13 @@ textarea {
     }
     
     #email {
-        order: 2;
+        order: 1;
         margin: 0;
         margin-top: 2%;
     }
 
     #socials {
-        order: 1;
+        order: 2;
     }
     .full-width {
         flex-direction: column;
