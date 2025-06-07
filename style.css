@@ -295,7 +295,7 @@ span {
 #home{
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     
 }
 
@@ -363,6 +363,18 @@ span {
         height: 30%; 
         width: 100%;
         padding: 4%;
+    }
+
+    #hello {
+        font-size: 3em;
+    }
+
+    #subtext {
+        font-size: 1.5em;
+    }
+
+    #subbertext {
+        font-size: 1em;
     }
 }
 
@@ -522,11 +534,12 @@ input :focus {
     margin-bottom: 0;
 }
 
-#contact > #container > div {
+#contact > .container > div {
     display: flex;
     gap: 1%;
     margin: 1%;
 }
+
 
 #socials {
     flex-direction: column;
@@ -540,12 +553,15 @@ input :focus {
     margin: 1%;
 }
 
-
+.email-container {
+    padding: 5%;
+    border-radius: 15px;
+    background-color: hsl(var(--dark-hue), 58%, 16%);
+}
 
 #email {
     display: flex;
     flex-direction: column;
-    background-color: hsl(var(--dark-hue), 58%, 16%);
     margin: 1%;
 }
 
@@ -597,7 +613,7 @@ textarea {
     background-color: var(--dark-color)
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1400px) {
     .box-header h2 {
         font-size: var(--h2-font-size);
         margin-top: 0;
@@ -609,13 +625,13 @@ textarea {
     }
     
     #email {
-        order: 1;
+        order: 2;
         margin: 0;
         margin-top: 2%;
     }
 
     #socials {
-        order: 2;
+        order: 1;
     }
     .full-width {
         flex-direction: column;
