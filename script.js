@@ -4,15 +4,6 @@
 const greeting = document.getElementById('greeting');
 const portrait = document.getElementById('portrait');
 
-// if (screen.availWidth > 500) {
-//     greeting.setAttribute("data-aos", "fade-up");
-//     greeting.setAttribute("data-aos-delay", "50");
-    
-
-
-
-// }
-
 
 const pills = document.querySelectorAll('.pills')
 
@@ -20,7 +11,6 @@ for (i = 0; i < pills.length; i++) {
     pills[i].setAttribute("data-aos", "fade-up");
     pills[i].setAttribute("data-aos-delay", (50*i));
     pills[i].setAttribute("data-aos-offset", "700px");
-    // pills[i].setAttribute("data-aos-anchor", "#skills");
     
 
 }
@@ -52,7 +42,7 @@ const navBar = document.getElementById("nav");
 window.onload=function(){
     toggleButton.addEventListener("click", toggleNav);
     multilanguage();
-
+    toggleNav();
 }
 
 function toggleNav () {

@@ -553,6 +553,10 @@ input :focus {
     margin: 1%;
 }
 
+.contacts i {
+    margin: 0 0.5em;
+}
+
 .email-container {
     padding: 5%;
     border-radius: 15px;
